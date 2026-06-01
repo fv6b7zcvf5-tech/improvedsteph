@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物理入门：看见自然的规则</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首页">Physics Notes</a>
+    <nav aria-label="主导航">
+      <a href="#ideas">核心思想</a>
+      <a href="#fields">场与粒子</a>
+      <a href="#timeline">物理地图</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="fieldCanvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow">从苹果落地到恒星发光</p>
+        <h1 id="hero-title">物理，是把世界翻译成规律的语言。</h1>
+        <p class="hero-copy">
+          它研究运动、能量、场、时空和物质的结构。好的物理直觉不是背公式，
+          而是看见复杂现象背后反复出现的简单模式。
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#ideas">开始浏览</a>
+          <a class="secondary-link" href="#fields">试试互动场线</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="一句话介绍">
+      <p>
+        这是一份给初学者的物理速览：先建立直觉，再把公式放回自然现象里。
+      </p>
+    </section>
+
+    <section class="content-section" id="ideas" aria-labelledby="ideas-title">
+      <div class="section-heading">
+        <p class="section-kicker">Four Ideas</p>
+        <h2 id="ideas-title">四个能贯穿物理的思想</h2>
+      </div>
+      <div class="idea-grid">
+        <article>
+          <span class="idea-mark">01</span>
+          <h3>守恒</h3>
+          <p>能量、动量、电荷等量在合适条件下保持不变。守恒律让我们不用知道每个细节，也能判断系统会怎样演化。</p>
+        </article>
+        <article>
+          <span class="idea-mark">02</span>
+          <h3>对称</h3>
+          <p>如果一个系统在平移、旋转或时间移动后仍然相同，就会产生深刻约束。很多定律来自“什么没有变”。</p>
+        </article>
+        <article>
+          <span class="idea-mark">03</span>
+          <h3>尺度</h3>
+          <p>同一个世界在不同尺度呈现不同语言：行星像经典力学，原子像量子力学，宇宙整体又需要广义相对论。</p>
+        </article>
+        <article>
+          <span class="idea-mark">04</span>
+          <h3>近似</h3>
+          <p>物理不是把世界简化到失真，而是找到最有用的忽略方式。近似让复杂问题变得可以计算、可以理解。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-section" id="fields" aria-labelledby="fields-title">
+      <div class="lab-copy">
+        <p class="section-kicker">Interactive</p>
+        <h2 id="fields-title">用一个小实验理解“场”</h2>
+        <p>
+          场可以理解成空间中每一点都有一个“影响方向和强度”。电场、磁场、引力场都可以这样想。
+          调整强度，观察右侧粒子轨迹如何从柔和漂移变成快速偏转。
+        </p>
+      </div>
+      <div class="lab-panel">
+        <div class="lab-toolbar">
+          <label for="strength">场强</label>
+          <input id="strength" type="range" min="20" max="120" value="68">
+          <output id="strengthValue" for="strength">68</output>
+        </div>
+        <canvas id="orbitCanvas" aria-label="粒子在场中的运动示意"></canvas>
+      </div>
+    </section>
+
+    <section class="content-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <p class="section-kicker">Map</p>
+        <h2 id="timeline-title">一张极简物理地图</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <time>经典力学</time>
+          <h3>运动与力</h3>
+          <p>适合描述日常尺度的运动：抛体、振动、轨道、碰撞。</p>
+        </article>
+        <article>
+          <time>电磁学</time>
+          <h3>场与波</h3>
+          <p>解释电路、光、无线通信，以及物质中带电粒子的相互作用。</p>
+        </article>
+        <article>
+          <time>热力学</time>
+          <h3>大量粒子的统计规律</h3>
+          <p>温度、熵、相变和能量转换，是连接微观与宏观的桥。</p>
+        </article>
+        <article>
+          <time>量子与相对论</time>
+          <h3>微观与高速/强引力</h3>
+          <p>进入原子、半导体、黑洞、宇宙学等现代物理的核心区域。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built as a small physics introduction site.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
